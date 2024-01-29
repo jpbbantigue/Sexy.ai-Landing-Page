@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Sexy.ai</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="https://files.cdn2.io/images/logos/logo.jpg"> 
+</head> 
+
+<body id="home">
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="https://files.cdn2.io/images/logos/logo-gold-dark.webp" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li>  
+                        <li class="scroll"><a href="#pricing">Pricing</a></li>
+                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section id="hero-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://files.cdn2.io/images/logos/main.webp" alt="Banner Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-text">
+                        <h2>Embrace Your <b>Sensuality</b> with <b>Sexy.AI</b> Explore Limitless Erotic <b>Imagery</b> at Your <b>Fingertips!</b></h2>
+                        <div class="text-left">
+                            <p>Unleash your deepest fantasies without limits <br/> from hentai to furry, realistic to LGBTQ+, and beyond. <br/> Join now for free to access Sexy.AI the ultimate AI porn generator.</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary btn-lg" href="https://sexy.ai/">Generate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#main-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="features">
+                    <!-- Service Box 1 -->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-dollar"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FREE</h4>
+                                <p>No signup required. Unleash your desires with Our NSFW AI Generator. Choose from a variety of seductive AI models to create tantalizing adult imagery.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Box 2 -->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FAST</h4>
+                                <p>Upgrade to pro membership to experience the ultimate in explicit creativity at your fingertips, unlocking priority queue, lightning fast generations, and exclusive models and features with our easy-to-use, NSFW AI Art Generator.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Box 3 -->
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-trophy"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FLAWLESS</h4>
+                                <p>The level of detail and realism in our generated AI porn, will leave you questioning what's real and what's AI. Our powerful AI generator provides unparalleled control through the advanced settings panel. Take advantage of features that open the door to a world without limits, where fantasy reigns supreme.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="col-md-12 text-center">
+                        <button class="nsfw-btn btn-lg" id="loadNSFWContentBtn">Load NSFW Content</button>
+                    </div>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="ageModal">
+                        <img src="https://files.cdn2.io/images/logos/logo-gold-dark.webp" alt="logo">
+                        <h2 style="font-size: 24px;">Are you 18 years or older?</h2>
+                        <div class="btn-container">
+                            <button class="btn" id="yesBtn">Yes</button>
+                            <button class="btn" id="noBtn">No</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+  
+    <!--Topic 1: -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Image Generation</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="https://files.cdn2.io/images/examples/images.png" alt="Image">
+                </div>
+                <div class="text-left wow fadeInRight">
+                    <p>Indulge in the seductive allure of our Images Section, where the fusion of avant-garde AI algorithms and artistic finesse creates a symphony of visual ecstasy.</p>
+                </div>
+                <div class="text-center wow fadeInRight">
+                    <a href="https://sexy.ai/" class="btn btn-lg">Generate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Topic 2: Healthy Cooking Recipes-->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Video Generation</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="https://files.cdn2.io/images/examples/Video.png" alt="Video">
+                </div>
+                <div class="text-left wow fadeInRight">
+                    <p>Step into the captivating allure of our Videos Section, where AI meets artistry to ignite a cinematic sensation like no other.</p>
+                </div>
+                <div class="text-center wow fadeInRight">
+                    <a href="https://sexy.ai/" class="btn btn-lg">Generate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Topic 3: Travel Photography Tips-->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Personal Libraries</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="https://files.cdn2.io/images/examples/libraries.png" alt="Libraries">
+                </div>
+                <div class="text-left wow fadeInRight">
+                    <p>Embark on a personalized journey through our exclusive Library, where your AI-generated creations find a forever home, ready to enchant you over and over again.</p>
+                </div>
+                <div class="text-center wow fadeInRight">
+                    <a href="https://sexy.ai/" class="btn btn-lg">Generate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+                </div>
+            </div>
+        </div>
+    </section><!--/#about-->
+    <section id="our-models">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">
+                    OUR MODELS
+                </h2>
+                <p class="wow fadeInDown">Enjoy a discreet and decadent AI art generation experience that's as classy as it is sensual. Create, explore, and savor the best in NSFW art.</p>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000"> <!-- Interval is set to 1.5 seconds (1500 milliseconds) -->
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- JavaScript will dynamically generate slides -->
+                </div>
+    
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section><!--/#our-models-->
+    
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Sexy.AI User Generations</h2>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item collection1">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://files.cdn2.io/images/examples/collection 1.png" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="https://sexy.ai/" target="_blank"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item collection2" style="display: none;">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://files.cdn2.io/images/examples/collection 2.png" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="https://sexy.ai/" target="_blank"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item collection3" style="display: none;">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://files.cdn2.io/images/examples/collection 3.png" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="https://sexy.ai/" target="_blank"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item collection4" style="display: none;">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://files.cdn2.io/images/examples/collection 4.png" alt="">
+                        <div class="portfolio-info">
+                            <a class="preview" href="https://sexy.ai/" target="_blank"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="text-center">
+                    <!-- Button to load more collections -->
+                    <button class="btn btn-lg" id="loadMoreBtn">Load More</button>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+    
+    
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Pricing</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $0
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+    
+                                <div class="plan-name">
+                                    Free Tier
+                                </div>
+                            </li>
+                            <li><strong>1</strong> DOMAIN</li>
+                            <li><strong>100GB</strong> DISK SPACE</li>
+                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                            <li>SHARED SSL CERTIFICATE</li>
+                            <li><strong>10</strong> EMAIL ADDRESS</li>
+                            <li><strong>24/7</strong> SUPPORT</li>
+                            <li class="plan-purchase"><a class="btn btn-lg" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $15
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+    
+                                <div class="plan-name">
+                                    Tier 1
+                                </div>
+                            </li>
+                            <li><strong>1</strong> DOMAIN</li>
+                            <li><strong>100GB</strong> DISK SPACE</li>
+                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                            <li>SHARED SSL CERTIFICATE</li>
+                            <li><strong>10</strong> EMAIL ADDRESS</li>
+                            <li><strong>24/7</strong> SUPPORT</li>
+                            <li class="plan-purchase"><a class="btn btn-lg" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $30
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+    
+                                <div class="plan-name">
+                                    Tier 2
+                                </div>
+                            </li>
+                            <li><strong>1</strong> DOMAIN</li>
+                            <li><strong>100GB</strong> DISK SPACE</li>
+                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                            <li>SHARED SSL CERTIFICATE</li>
+                            <li><strong>10</strong> EMAIL ADDRESS</li>
+                            <li><strong>24/7</strong> SUPPORT</li>
+                            <li class="plan-purchase"><a class="btn btn-lg" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#pricing-->
+    
+   
+    <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Contact Us</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="https://files.cdn2.io/images/logos/logo.jpg" alt="logo">
+                </div>
+                <div class="text-left wow fadeInRight">
+                    <p>For any inquiries or concerns, please feel free to reach out to us using the following options:</p>
+                    <h1>Billing Support:</h1>
+                    <p>If you are subscribing via Epoch, please <a href="https://epoch.com/" target="_blank" class="external-link">click here</a> to connect with our Billing Support team.</p>    
+                    <p>For all other billing inquiries, please contact <a href="mailto:support@sexy.ai" class="external-link">support@sexy.ai</a>
+                    <h1>General Inquiries:</h1>
+                    <p>For general questions or to provide feedback, <a href="contact.html" target="_blank" class="external-link">click here</a> for our contact info.</p>    
+                    <p>We value your feedback and strive to provide timely and helpful assistance. Thank you for choosing Sexy.AI!</p>    
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://sexyai.printify.me/products"><i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="https://wiki.sexy.ai/en/home"><i class="fas fa-book"></i></a></li>
+                        <li><a href="https://discord.com/invite/sexyai"><i class="fab fa-discord"></i></a></li> 
+                        <li><a href="https://www.reddit.com/r/SexyAI/"><i class="fab fa-reddit"></i></a></li>
+                        <li><a href="https://twitter.com/_sexyai"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#contact-us-->
+	
+   <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-text">
+                &copy; 2024 sexy.ai. All rights reserved |
+                <a href="2257-compliance.html">2257 Compliance Notice</a> |
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
