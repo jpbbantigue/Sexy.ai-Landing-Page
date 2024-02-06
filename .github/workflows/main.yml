@@ -1,0 +1,85 @@
+name: sexy-landing CI/CD
+
+on:
+  push:
+    branches:
+      - staging
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Create gh-actions directory
+        run: |
+          mkdir -p gh-actions
+          ls -l  # Debugging step: List contents of the current directory
+          ls -l gh-actions  # Debugging step: List contents of gh-actions directory
+
+      - name: Copy files to gh-actions directory
+        run: |
+          find . -mindepth 1 -maxdepth 1 -not -name 'gh-actions' -exec cp -r {} gh-actions/ \;
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: gh-actions
+          path: gh-actions
+
+  deploy-staging:
+    if: github.ref == 'refs/heads/staging'
+    runs-on: 
+      - self-hosted
+      - staging
+
+    needs: build
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: gh-actions
+
+      - name: show IP
+        run: |
+          ip add
+
+      - name: show pwd
+        run: |
+          pwd
+
+      - name: Deploy to staging
+        run: |
+          sudo rm -rf /var/www/staging/*
+          sudo cp -r /home/user/actions-runner/_work/sexyai-landing-page/sexyai-landing-page/* /var/www/staging/
+
+  deploy-production:
+    if: github.ref == 'refs/heads/main'
+    runs-on: 
+      - self-hosted
+      - production
+
+    needs: build
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: gh-actions
+
+      - name: show IP
+        run: |
+          ip add
+
+      - name: show pwd
+        run: |
+          pwd
+
+      - name: Deploy to production
+        run: |
+          sudo rm -rf /var/www/production/*
+          sudo cp -r /home/user/actions-runner/_work/sexyai-landing-page/sexyai-landing-page/. /var/www/production/
