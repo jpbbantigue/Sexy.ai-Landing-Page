@@ -14,25 +14,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create gh-actions directory
-        run: |
-          mkdir -p gh-actions
-          ls -l  # Debugging step: List contents of the current directory
-          ls -l gh-actions  # Debugging step: List contents of gh-actions directory
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: |
+            - recursive: true
 
-      - name: Copy files to gh-actions directory
-        run: |
-          find . -mindepth 1 -maxdepth 1 -not -name 'gh-actions' -exec cp -r {} gh-actions/ \;
+      - name: "Build"
+        run: pnpm build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: gh-actions
-          path: gh-actions
+          name: dist
+          path: dist
 
   deploy-staging:
     if: github.ref == 'refs/heads/staging'
-    runs-on: 
+    runs-on:
       - self-hosted
       - staging
 
@@ -42,7 +41,7 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v3
         with:
-          name: gh-actions
+          name: dist
 
       - name: show IP
         run: |
@@ -59,17 +58,16 @@ jobs:
 
   deploy-production:
     if: github.ref == 'refs/heads/main'
-    runs-on: 
+    runs-on:
       - self-hosted
       - production
-
     needs: build
 
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v3
         with:
-          name: gh-actions
+          name: dist
 
       - name: show IP
         run: |

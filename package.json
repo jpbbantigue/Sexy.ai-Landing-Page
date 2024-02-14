@@ -1,0 +1,26 @@
+{
+	"name": "sexyai-landing-page",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "eleventy --serve",
+		"debug": "DEBUG=Eleventy* eleventy --serve",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"build": "eleventy"
+	},
+	"author": "AIMG CORP",
+	"dependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"eslint": "^8.56.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "^2.25.2"
+	},
+	"devDependencies": {
+		"eslint-plugin-prettier": "^5.1.3"
+	}
+}
