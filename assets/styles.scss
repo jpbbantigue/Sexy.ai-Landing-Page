@@ -1,0 +1,52 @@
+.btn-gradient, .bg-gradient {
+  background: rgb(99,102,241)!important;
+  background: linear-gradient(90deg, rgba(99,102,241,1) 0%, rgba(168,85,247,1) 50%, rgba(236,72,153,1) 100%)!important;
+  border: none;
+}
+
+.btn-outline-primary {
+  border-color:rgba(236,72,153,1);
+  color:rgba(236,72,153,1);
+
+  &:hover, &:active{
+    background: rgb(99,102,241)!important;
+    background: linear-gradient(90deg, rgba(99,102,241,1) 0%, rgba(168,85,247,1) 50%, rgba(236,72,153,1) 100%)!important;
+    border: none;
+  }
+}
+
+.text-body-primary {
+  color:rgba(236,72,153,1)!important;
+}
+
+.border-primary {
+  border-color:rgba(236,72,153,1)!important;
+
+  .card-header {
+    background-color:rgba(236,72,153,1)!important;
+  }
+}
+
+.feature-icon {
+  border-radius:8px;
+}
+
+#models {
+  .card-cover {
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .d-flex {
+    background: rgba(0,0,0,.6);
+  }
+}
+
+#video-gens {
+  display: none;
+}
+
+.nsfw {
+  opacity: 0;
+}

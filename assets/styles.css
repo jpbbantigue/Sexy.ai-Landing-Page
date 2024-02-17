@@ -1,0 +1,47 @@
+.btn-gradient, .bg-gradient {
+  background: rgb(99, 102, 241) !important;
+  background: linear-gradient(90deg, rgb(99, 102, 241) 0%, rgb(168, 85, 247) 50%, rgb(236, 72, 153) 100%) !important;
+  border: none;
+}
+
+.btn-outline-primary {
+  border-color: rgb(236, 72, 153);
+  color: rgb(236, 72, 153);
+}
+.btn-outline-primary:hover, .btn-outline-primary:active {
+  background: rgb(99, 102, 241) !important;
+  background: linear-gradient(90deg, rgb(99, 102, 241) 0%, rgb(168, 85, 247) 50%, rgb(236, 72, 153) 100%) !important;
+  border: none;
+}
+
+.text-body-primary {
+  color: rgb(236, 72, 153) !important;
+}
+
+.border-primary {
+  border-color: rgb(236, 72, 153) !important;
+}
+.border-primary .card-header {
+  background-color: rgb(236, 72, 153) !important;
+}
+
+.feature-icon {
+  border-radius: 8px;
+}
+
+#models .card-cover {
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#models .d-flex {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#video-gens {
+  display: none;
+}
+
+.nsfw {
+  opacity: 0;
+}/*# sourceMappingURL=styles.css.map */
