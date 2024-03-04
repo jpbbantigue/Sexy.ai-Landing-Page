@@ -1,7 +1,36 @@
+body, .bg-dark {
+  background-color: #000 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: none !important;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
+#enhancedVids {
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
 .btn-gradient, .bg-gradient {
   background: rgb(99, 102, 241) !important;
   background: linear-gradient(90deg, rgb(99, 102, 241) 0%, rgb(168, 85, 247) 50%, rgb(236, 72, 153) 100%) !important;
   border: none;
+}
+.btn-gradient:hover, .btn-gradient:active, .bg-gradient:hover, .bg-gradient:active {
+  color: #fff !important;
 }
 
 .btn-outline-primary {
@@ -12,6 +41,12 @@
   background: rgb(99, 102, 241) !important;
   background: linear-gradient(90deg, rgb(99, 102, 241) 0%, rgb(168, 85, 247) 50%, rgb(236, 72, 153) 100%) !important;
   border: none;
+}
+
+.btn.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .text-body-primary {

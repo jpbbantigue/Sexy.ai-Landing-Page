@@ -22,28 +22,21 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 col-lg-6 justify-content-lg-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html" title="Home">Home</a>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/generate" title="Generate Images">Generate Images</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://sexy.ai/" title="Generate">Generate</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/videos" title="Generate Videos">Generate Videos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#pricing" title="Pricing">Pricing</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/library" title="Library">Library</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact" title="Contact Us">Contact Us</a>
+            <li class="nav-item mx-2">
+              <a href="https://sexy.ai/sign-in" title="Sign In" class="btn btn-gradient circle"></a>
             </li>
           </ul>
-          <div class="d-flex col-lg-3 justify-content-lg-end">
-            <div class="btn form-check form-switch mx-auto mx-lg-3">
-              <input class="form-check-input" type="checkbox" id="nsfwToggle" >
-              <label class="form-check-label" for="nsfwToggle">NSFW Content</label>
-            </div>
-            <a href="https://sexy.ai/sign-in" title="Sign In" class="btn btn-gradient">Sign In</a>
-          </div>
         </div>
       </div>
     </nav>
@@ -90,6 +83,15 @@
     </div>
 
     <div class="container col-xxl-8 px-4 py-5">
+      <div class="row text-center my-3">
+        <div class="col">
+          <div class="btn form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="nsfwToggle" >
+            <label class="form-check-label" for="nsfwToggle">NSFW Content</label>
+          </div>
+        </div>
+      </div>
+      
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
           <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Image Generations</h2>
@@ -132,6 +134,88 @@
             <img class="rounded-lg-3" src="images/gallery-b.jpg" alt="Personal Galleries" width="720" id="personal-gallery">
         </div>
       </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="arrow-right-short" viewBox="0 0 16 16">
+        <path fill="#fff" fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+      </symbol>
+    </svg>
+
+    <div class="container mt-5">
+      <div class="row">
+        <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Upcoming Features</h2>
+        <p class="lead text-center my-4">Get ready to unlock a whole new realm of creativity with our upcoming AI generation website features—prepare to be amazed!</p>
+      </div>
+    </div>
+
+    <div id="upcomingFeatures" class="carousel slide mb-5" data-bs-ride="carousel">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#upcomingFeatures" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#upcomingFeatures" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#upcomingFeatures" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner vh-75 my-5 bg-dark">
+
+        <div class="carousel-item h-100 active">
+          <video loop autoplay muted playsinline id="enhancedVids" class="object-fit-cover" src="images/Super_SVD_00037.mp4">
+            Your browser does not support this video format
+          </video>
+          <div class="container">
+            <div class="carousel-caption text-start mb-5">
+              <h3 class="display-6 fw-bold text-white col-12 col-lg-8">Enhanced AI Video Clips</h3>
+              <p class="text-muted col-12 col-lg-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus mauris tortor, quis ornare dui tempor sed. Quisque gravida lacus nec mauris ornare, id aliquet mi aliquam. Quisque facilisis sollicitudin turpis et tempus.</p>
+              <a class="btn btn-lg btn-gradient rounded-pill mt-3" href="#pricing">
+                Get Pro for Early Access
+                <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item h-100">
+          <video loop autoplay muted playsinline id="enhancedVids" class="object-fit-cover" src="images/Super_SVD_00044.mp4">
+            Your browser does not support this video format
+          </video>
+          <div class="container">
+            <div class="carousel-caption text-start mb-5">
+              <h3 class="display-6 fw-bold text-white col-12 col-lg-8">Lorem ipsum dolor sit amet</h3>
+              <p class="text-muted col-12 col-lg-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus mauris tortor, quis ornare dui tempor sed. Quisque gravida lacus nec mauris ornare, id aliquet mi aliquam. Quisque facilisis sollicitudin turpis et tempus.</p>
+              <a class="btn btn-lg btn-gradient rounded-pill mt-3" href="#pricing">
+                Get Pro for Early Access
+                <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item h-100">
+          <video loop autoplay muted playsinline id="enhancedVids" class="object-fit-cover" src="images/Super_SVD_00048.mp4">
+            Your browser does not support this video format
+          </video>
+          <div class="container">
+            <div class="carousel-caption text-start mb-5">
+              <h3 class="display-6 fw-bold text-white col-12 col-lg-8">Lorem ipsum dolor sit amet</h3>
+              <p class="text-muted col-12 col-lg-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus mauris tortor, quis ornare dui tempor sed. Quisque gravida lacus nec mauris ornare, id aliquet mi aliquam. Quisque facilisis sollicitudin turpis et tempus.</p>
+              <a class="btn btn-lg btn-gradient rounded-pill mt-3" href="#pricing">
+                Get Pro for Early Access
+                <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#upcomingFeatures" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#upcomingFeatures" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <div class="container col-xxl-8 px-4 py-5" id="models">
@@ -386,6 +470,73 @@
       </div>
     </div>
 
+    <div class="container col-xxl-8 px-4 py-5" id="pricing">
+      <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Pricing</h2>
+      <div class="row text-center my-3">
+        <div class="col">
+          <div class="btn form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="pricingToggle" >
+            <label class="form-check-label" for="pricingToggle">Monthly</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4 py-5 align-items-stretch">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm h-100">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited image generation</li>
+                <li>Generate up to 2 images at once</li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-lg btn-secondary mt-auto mx-3 mb-3">Generate now</button>
+          </div>
+        </div>
+        <div id="tier1" class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary h-100">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Tier 1 Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span>$14.99</span><small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited image generation</li>
+                <li>Fast queue</li>
+                <li>Video generations</li>
+                <li>Generate up to 4 images at once</li>
+                <li>Your support towards Sexy.ai ❤</li>
+              </ul>
+            </div>
+            <a href="https://api.sexy.ai/initializeEpochSubscription?sessionID=b8916431-fcf6-42b0-bfc1-e06c4d187096&productID=6vcQ421AmlbN&redirectURL=https%3A%2F%2Fsexy.ai%2Fgenerate" class="btn btn-lg btn-gradient mt-auto mx-3 mb-3" title="Get Pro">Get it now</a>
+          </div>
+        </div>
+        <div id="tier2" class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary h-100">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Tier 2 Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><span>$29.99</span><small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited image generation</li>
+                <li>Fastest priority queue</li>
+                <li>Video generations</li>
+                <li>Generate up to 4 images at once</li>
+                <li>Early feature access</li>
+                <li>Your support towards Sexy.ai ❤</li>
+              </ul>
+            </div>
+            <a href="https://api.sexy.ai/initializeEpochSubscription?sessionID=b8916431-fcf6-42b0-bfc1-e06c4d187096&productID=lPQ7Okzw2ead&redirectURL=https%3A%2F%2Fsexy.ai%2Fgenerate" class="btn btn-lg btn-gradient mt-auto mx-3 mb-3" title="Get Pro">Get it now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container col-xxl-8 px-4 py-5">
       <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Sexy.ai Community Generations</h2>
       <div class="row g-4 py-5" data-masonry='{"percentPosition": true }' id="community-showcase">
@@ -609,7 +760,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-body-tertiary">
+    <div class="container-fluid">
       <div class="row">
         <div class="container col-xxl-8 px-4 py-5 ">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -623,64 +774,6 @@
                 <a href="contests/feb2024.html" title="Sexy Valentine Reddit Contest Winners" class="btn btn-gradient btn-lg px-4 me-md-2">Check out the winning images</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container col-xxl-8 px-4 py-5" id="pricing">
-      <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Pricing</h2>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4 py-5 align-items-stretch">
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm h-100">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Free</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Unlimited image generation</li>
-                <li>Generate up to 2 images at once</li>
-              </ul>
-            </div>
-            <button type="button" class="btn btn-lg btn-secondary mt-auto mx-3 mb-3">Generate now</button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm border-primary h-100">
-            <div class="card-header py-3 text-bg-primary border-primary">
-              <h4 class="my-0 fw-normal">Tier 1 Pro</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$14.99<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Unlimited image generation</li>
-                <li>Fast queue</li>
-                <li>Video generations</li>
-                <li>Generate up to 4 images at once</li>
-                <li>Your support towards Sexy.ai ❤</li>
-              </ul>
-            </div>
-            <a href="https://boosty.to/sexyai" class="btn btn-lg btn-gradient mt-auto mx-3 mb-3" title="Get Pro">Get it now</a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm border-primary h-100">
-            <div class="card-header py-3 text-bg-primary border-primary">
-              <h4 class="my-0 fw-normal">Tier 2 Pro</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$29.99<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Unlimited image generation</li>
-                <li>Fastest priority queue</li>
-                <li>Video generations</li>
-                <li>Generate up to 4 images at once</li>
-                <li>Early feature access</li>
-                <li>Your support towards Sexy.ai ❤</li>
-              </ul>
-            </div>
-            <a href="https://boosty.to/sexyai" class="btn btn-lg btn-gradient mt-auto mx-3 mb-3" title="Get Pro">Get it now</a>
           </div>
         </div>
       </div>

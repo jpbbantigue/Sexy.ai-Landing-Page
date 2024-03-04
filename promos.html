@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles.css">
 
-    <title>Compliance Notice | Sexy.ai</title>
+    <title>Sexy.ai</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg border-bottom border-body sticky-top bg-dark">
@@ -41,21 +41,57 @@
       </div>
     </nav>
 
-    <div class="container">
-        <div class="row py-5">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Compliance</h1>
-            <h2 class="h4 mt-5 text-uppercase">18 U.S.C. Section 2257 Compliance Notice</h2>
-            <p>All models, actors, actresses and other persons that appear in any visual depiction of actual sexually explicit conduct appearing or otherwise contained in this Website were over the age of eighteen years at the time of the creation of such depictions. With respect to all visual depictions displayed on this website, whether of actual sexually explicit conduct, simulated sexual content or otherwise, all persons in said visual depictions were at least 18 years of age when said visual depictions were created. The owners and operators of this Website are not the primary producer (as that term is defined in 18 USC section 2257) of any of the visual content contained in the Website.</p>
-            <p>The original records required pursuant to 18 U.S.C. section 2257 and 28 C.F.R. 75 for materials contained in the website are kept by the appropriate Custodian of Records as follows:</p>
-            <ul class="list-unstyled">
-              <li>AIMG CORP</li>
-              <li>C/o Brown & Blaier, PC</li>
-              <li>Custodian of Records</li>
-              <li>33 N Main Street</li>
-              <li>Marlboro, NJ 07746</li>
-            </ul>
+    <div class="container col-xxl-8 px-4 py-5" id="promos">
+      <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Limited-Time Offer</h2>
+      <p class="lead text-center">Get your Early Bird Pro Membership Subscription Now</p>
+      <div class="row row-cols-1 row-cols-md-2 mb-3 text-center g-4 py-5 align-items-stretch">
+
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm h-100">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Your Plan</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$29.99<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited image generation</li>
+                <li>Fastest priority queue</li>
+                <li>Video generations</li>
+                <li>Generate up to 4 images at once</li>
+                <li>Early feature access</li>
+                <li>Your support towards Sexy.ai ❤</li>
+              </ul>
+            </div>
+            <a href="https://boosty.to/sexyai" class="btn btn-lg btn-secondary mt-auto mx-3 mb-3" title="Keep this plan">Keep this plan</a>
+          </div>
         </div>
-            
+
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary h-100">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Early Bird Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$10.00<small class="text-body-secondary fw-light">/mo</small></h1>
+              <em class="text-body-secondary fw-light">Offer ends in 30 days</em>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Cheaper monthly subscription</li>
+                <li>Unlimited image generation</li>
+                <li>Fastest priority queue</li>
+                <li>Video generations</li>
+                <li>Generate up to 4 images at once</li>
+                <li>Early feature access</li>
+                <li>Your support towards Sexy.ai ❤</li>
+              </ul>
+            </div>
+            <a href="https://boosty.to/sexyai" class="btn btn-lg btn-gradient mt-auto mx-3 mb-3" title="Get Pro">Get it now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-8 d-flex align-items-center">
           <span class="mb-3 mb-md-0 text-body-secondary">© 2024 sexy.ai. All rights reserved | <a href="2257-compliance.html" class="text-body-primary" title="2257 Compliance Notice">2257 Compliance Notice</a> | <a href="privacy-policy.html" class="text-body-primary" title="Privacy Policy">Privacy Policy</a> | <a href="terms.html" class="text-body-primary" title="Terms of Service">Terms of Service</a> | <a href="contact.html" class="text-body-primary" title="Contact Us">Contact Us</a></span>
@@ -85,6 +121,28 @@
       </footer>
     </div>
 
+    <!-- NSFW Modal -->
+    <div class="modal fade" id="nsfwModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="nsfwModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nsfwModalLabel">Age Verification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            This website hosts content that is restricted to individuals of legal adult age, featuring nudity and explicit portrayals of sexual activity. By proceeding, you confirm that you are either at least 18 years old or have reached the legal age of majority in your jurisdiction, and you agree to view content of a sexually explicit nature.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="notOfAge" data-bs-dismiss="modal">Cancel (I under 18 years old)</button>
+            <button type="button" class="btn btn-gradient" id="ofAge" data-bs-dismiss="modal">Accept (I am 18+ years old)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/scripts.js"></script>
   </body>
 </html>

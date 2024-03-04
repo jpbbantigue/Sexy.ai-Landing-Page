@@ -23,6 +23,27 @@ $(document).ready(function(){
     nsfwModal.toggle();
   });
 
+  $("#pricingToggle").click(function(e){
+    if ( !$("#pricingToggle").prop('checked') ) {
+      $("#pricing label").text("Monthly");
+      $("#pricingToggle").prop('checked',false);
+      $("#tier1 .pricing-card-title span").text('$14.99');
+      $("#tier1 a").attr('href','https://api.sexy.ai/initializeEpochSubscription?sessionID=b8916431-fcf6-42b0-bfc1-e06c4d187096&productID=6vcQ421AmlbN&redirectURL=https%3A%2F%2Fsexy.ai%2Fgenerate');
+      $("#tier2 a").attr('href','https://api.sexy.ai/initializeEpochSubscription?sessionID=b8916431-fcf6-42b0-bfc1-e06c4d187096&productID=lPQ7Okzw2ead&redirectURL=https%3A%2F%2Fsexy.ai%2Fgenerate');
+      $(".pricing-card-title small").text('/mo');
+      
+    } else {
+      $("#pricing label").text("Annual");
+      $("#pricingToggle").prop('checked',true);
+      $("#tier1 .pricing-card-title span").text('$129.99');
+      $("#tier1 a").attr('href','https://api.sexy.ai/initializeEpochSubscription?sessionID=b8916431-fcf6-42b0-bfc1-e06c4d187096&productID=Hbu5RCfvDYFu&redirectURL=https%3A%2F%2Fsexy.ai%2Fgenerate');
+      $("#tier2 .pricing-card-title span").text('$279.99');
+      $("#tier2 a").attr('href','https://api.sexy.ai/initializeEpochSubscription?sessionID=b8916431-fcf6-42b0-bfc1-e06c4d187096&productID=XikPabvBcGjH&redirectURL=https%3A%2F%2Fsexy.ai%2Fgenerate');
+      $(".pricing-card-title small").text('/yr');
+      
+    }
+  });
+
   $("#ofAge").click(function(){
     ofAge = true;
     $("#nsfwToggle").prop('checked',true);
