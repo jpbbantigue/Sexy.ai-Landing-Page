@@ -111,7 +111,7 @@ body, .bg-dark {
   form {
     background-image: url('../images/pricing-bg.jpg');
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: center 100%;
   }
 
   ul {
@@ -137,6 +137,13 @@ body, .bg-dark {
   .form-check-input + label {
     border:solid 2px var(--bs-border-color-translucent);
     background-color: rgba(0,0,0,.25);
+
+    .badge {
+      &.text-bg-primary {
+        background-color:rgba(236,72,153,1)!important;
+        color:#FFF!important;
+      }
+    }
   }
 
   .form-check-input:checked + label {
@@ -146,6 +153,13 @@ body, .bg-dark {
 
     h5 {
      color:#fff!important; 
+    }
+    
+    .badge {
+      &.text-bg-primary {
+        background-color:#FFF!important;
+        color:rgba(236,72,153,1)!important;
+      }
     }
   }
 }
