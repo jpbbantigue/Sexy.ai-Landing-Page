@@ -100,8 +100,27 @@ body, .bg-dark {
   opacity: 0;
 }
 
+#pricing form {
+  background-image: url("../images/pricing-bg.jpg");
+  background-size: cover;
+  background-position: 0% 100%;
+}
+#pricing ul {
+  list-style: none;
+  padding-left: 15px;
+}
 #pricing ul li {
   line-height: 2em;
+  margin-left: -15px;
+  display: flex;
+  align-items: top;
+}
+#pricing ul li::before {
+  content: "\f26a";
+  display: inline-block;
+  font-family: bootstrap-icons;
+  margin-right: 10px;
+  color: rgb(236, 72, 153);
 }
 #pricing .form-check-input + label {
   border: solid 2px var(--bs-border-color-translucent);

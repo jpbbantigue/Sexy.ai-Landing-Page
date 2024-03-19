@@ -107,9 +107,30 @@ body, .bg-dark {
 }
 
 #pricing {
+
+  form {
+    background-image: url('../images/pricing-bg.jpg');
+    background-size: cover;
+    background-position: 0% 100%;
+  }
+
   ul {
+    list-style: none;
+    padding-left: 15px;
+
     li {
       line-height: 2em;
+      margin-left: -15px;
+      display: flex;
+      align-items: top;
+
+      &::before {
+        content: "\F26A";
+        display: inline-block;
+        font-family: bootstrap-icons;
+        margin-right: 10px;
+        color:rgba(236,72,153,1);
+      }
     }
   }
 
