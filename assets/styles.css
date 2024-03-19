@@ -2,6 +2,25 @@ body, .bg-dark {
   background-color: #000 !important;
 }
 
+.landing-h1 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+@media (min-width: 425px) {
+  .landing-h1 {
+    font-size: calc(1.425rem + 2.1vw) !important;
+  }
+}
+
+.landing-lead {
+  font-size: 0.8em !important;
+}
+@media (min-width: 425px) {
+  .landing-lead {
+    font-size: 1.25rem !important;
+    font-weight: 300 !important;
+  }
+}
+
 .carousel-indicators [data-bs-target] {
   background-color: #fff !important;
 }
