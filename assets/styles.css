@@ -4,10 +4,12 @@ body, .bg-dark {
 
 .landing-h1 {
   font-size: calc(1.275rem + 0.3vw) !important;
+  text-align: center;
 }
 @media (min-width: 425px) {
   .landing-h1 {
     font-size: calc(1.425rem + 2.1vw) !important;
+    text-align: left;
   }
 }
 
