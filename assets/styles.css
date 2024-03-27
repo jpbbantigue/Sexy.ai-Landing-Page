@@ -124,23 +124,29 @@ body, .bg-dark {
   margin-right: 10px;
   color: rgb(236, 72, 153);
 }
-#pricing .form-check-input + label {
+#pricing .pricing-option + label {
   border: solid 2px var(--bs-border-color-translucent);
   background-color: rgba(0, 0, 0, 0.25);
 }
-#pricing .form-check-input + label .badge.text-bg-primary {
+#pricing .pricing-option + label .badge.text-bg-primary {
   background-color: rgb(236, 72, 153) !important;
   color: #FFF !important;
 }
-#pricing .form-check-input:checked + label {
+#pricing .pricing-option + label .pay-buttons {
+  display: none !important;
+}
+#pricing .pricing-option:checked + label {
   background: rgb(99, 102, 241) !important;
   background: linear-gradient(90deg, rgb(57, 59, 177) 0%, rgb(128, 54, 197) 50%, rgb(172, 37, 104) 100%) !important;
   border: solid 2px #fff;
 }
-#pricing .form-check-input:checked + label h5 {
+#pricing .pricing-option:checked + label h5 {
   color: #fff !important;
 }
-#pricing .form-check-input:checked + label .badge.text-bg-primary {
+#pricing .pricing-option:checked + label .badge.text-bg-primary {
   background-color: #FFF !important;
   color: rgb(236, 72, 153) !important;
+}
+#pricing .pricing-option:checked + label .pay-buttons {
+  display: grid !important;
 }/*# sourceMappingURL=styles.css.map */

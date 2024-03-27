@@ -136,7 +136,7 @@ body, .bg-dark {
     }
   }
 
-  .form-check-input + label {
+  .pricing-option + label {
     border:solid 2px var(--bs-border-color-translucent);
     background-color: rgba(0,0,0,.25);
 
@@ -146,9 +146,13 @@ body, .bg-dark {
         color:#FFF!important;
       }
     }
+
+    .pay-buttons {
+      display: none!important;
+    }
   }
 
-  .form-check-input:checked + label {
+  .pricing-option:checked + label {
     background: rgb(99,102,241)!important;
     background: linear-gradient(90deg, rgb(57, 59, 177) 0%, rgb(128, 54, 197) 50%, rgb(172, 37, 104) 100%)!important;
     border:solid 2px #fff;
@@ -162,6 +166,10 @@ body, .bg-dark {
         background-color:#FFF!important;
         color:rgba(236,72,153,1)!important;
       }
+    }
+
+    .pay-buttons {
+      display: grid!important;
     }
   }
 }

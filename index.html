@@ -42,7 +42,7 @@
       </div>
     </nav>
 
-    <div class="container col-xxl-8 px-4 py-0 py-md-5">
+    <div class="container col-xxl-10 px-4 py-0 py-md-5">
       <div class="row flex-lg-row align-items-center g-5 py-3">
         <div class="col-md-6 col-lg-7">
           <h1 class="landing-h1 fw-bold text-body-emphasis lh-1 mb-3">Explore and create limitless erotic imagery with Sexy.AI</h1>
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-10 px-4 py-5">
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 p-2">
@@ -169,7 +169,7 @@
       </button> -->
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-10 px-4 py-5">
       <div class="row text-center my-3">
         <div class="col">
           <div class="btn form-check form-switch">
@@ -193,7 +193,7 @@
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5" id="video-gens">
+    <div class="container col-xxl-10 px-4 py-5" id="video-gens">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
           <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Video Generations</h2>
@@ -208,7 +208,7 @@
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-10 px-4 py-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
           <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Personal Galleries</h2>
@@ -223,7 +223,7 @@
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5" id="models">
+    <div class="container col-xxl-10 px-4 py-5" id="models">
       <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Our Models</h2>
       <p class="lead text-center my-4">Enjoy a discreet and decadent AI art generation experience that's as classy as it is sensual. Create, explore, and savor the best in NSFW art.</p>
           
@@ -475,9 +475,17 @@
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5" id="pricing">
+    <div class="container col-xxl-10 px-4 py-5" id="pricing">
       <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Choose your Plan</h2>
       <p class="lead text-center my-4 mb-5">No lock-in period. You can cancel anytime.</p>
+      <div class="row text-center my-3">
+        <div class="col">
+          <div class="btn form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="pricingToggle" checked>
+            <label class="form-check-label" for="pricingToggle">Annual</label>
+          </div>
+        </div>
+      </div>
 
       <form class="card">
         <div class="card-body p-4">
@@ -485,37 +493,42 @@
 
             <div class="col2 col-sm-2 col-md-4">
               <h4 class="my-0 fw-bold text-body-primary mb-3">Get Huge Savings Today!</h4>
-              <p>Save up to <span class="text-body-primary">50%</span> when you subscribe now</p>
+              <p>Save up to <span class="text-body-primary">50%</span> when you subscribe for one year</p>
             </div>
 
             <div class="col col-sm-5 col-md-4">
 
-              <input class="form-check-input d-none" type="radio" name="pricingOption" id="pricingOption1">
+              <input class="form-check-input d-none pricing-option" type="radio" name="pricingOption" id="pricingOption1">
               <label class="card mb-4" for="pricingOption1">
                 <div class="card-body p-4">
                   <h5 class="my-0 fw-bold text-body-primary">Tier 1</h5>
-                  <p class="h4 text-body-white"><span class="display-6 fw-bold">$7.50 </span><span class="text-decoration-line-through text-muted">$14.99</span> / month</p>
-                  <p class="text-muted small">Cancel anytime, privacy in bank statement</p>
+                  <p class="h4 text-body-white"><span class="display-6 fw-bold ">$7.50 </span><span class="text-decoration-line-through text-muted">$14.99</span> / <span class="freq">mo</span></p>
+                  <p class="text-muted small">When you pay for a year in advance. Cancel anytime, privacy in bank statement.</p>
+
+                  <div class="d-grid gap-3 text-center pay-buttons">
+                    <a href="#" class="btn btn-gradient btn px-4 cc-btn">Pay with Credit / Debit Card <i class="bi bi-credit-card"></i></a>
+                    <a href="#" class="btn btn-secondary btn px-4 crypto-btn">Pay with Crypto <img src="images/helio.svg" alt="Helio icon" height="24"></a>
+                    <p class="fw-bold text-muted small mb-0 annual">Annual payment billed as $<span class="annual-cost">180.00</span></p>
+                  </div>
                 </div>
               </label>
 
-              <input class="form-check-input d-none" type="radio" name="pricingOption" id="pricingOption2" checked>
+              <input class="form-check-input d-none pricing-option" type="radio" name="pricingOption" id="pricingOption2" checked>
               <label class="card mb-4" for="pricingOption2">
                 <div class="card-body p-4">
                   <div class="d-flex justify-content-between">
                     <h5 class="my-0 fw-bold text-body-primary">Tier 2</h5>
                     <span class="badge rounded-pill text-bg-primary align-self-end"><i class="bi bi-fire"></i> Popular</span>
                   </div>
-                  <p class="h4 text-body-white"><span class="display-6 fw-bold">$15.00 </span><span class="text-decoration-line-through text-muted">$29.99</span> / month</p>
-                  <p class="text-muted small">Cancel anytime, privacy in bank statement</p>
+                  <p class="h4 text-body-white"><span class="display-6 fw-bold ">$15.00 </span><span class="text-decoration-line-through text-muted">$29.99</span> / <span class="freq">mo</span></p>
+                  <p class="text-muted small">When you pay for a year in advance. Cancel anytime, privacy in bank statement.</p>
+                  <div class="d-grid gap-3 text-center pay-buttons">
+                    <a href="#" class="btn btn-gradient btn px-4 cc-btn">Pay with Credit / Debit Card <i class="bi bi-credit-card"></i></a>
+                    <a href="#" class="btn btn-secondary btn px-4 crypto-btn">Pay with Crypto <img src="images/helio.svg" alt="Helio icon" height="24"></a>
+                    <p class="fw-bold text-muted small mb-0 annual">Annual payment billed as $<span class="annual-cost">180.00</span></p>
+                  </div>
                 </div>
               </label>
-              
-              <div class="d-grid gap-3 text-center">
-                <a href="#" class="btn btn-gradient btn-lg px-4 cc-btn">Pay with Credit / Debit Card <i class="bi bi-credit-card"></i></a>
-                <a href="#" class="btn btn-secondary btn-lg px-4 crypto-btn">Pay with Crypto <img src="images/helio.svg" alt="Helio icon" height="24"></a>
-                <p class="fw-bold text-muted small mb-0">Annual payment billed as $<span class="annual-cost">180.00</span></p>
-              </div>
 
             </div>
 
@@ -537,7 +550,7 @@
       </form>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-10 px-4 py-5">
       <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-center">Sexy.ai Community Generations</h2>
       <div class="row g-4 py-5" data-masonry='{"percentPosition": true }' id="community-showcase">
 
@@ -762,7 +775,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="container col-xxl-8 px-4 py-5 ">
+        <div class="container col-xxl-10 px-4 py-5 ">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
               <img src="images/feb2024.jpg" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Sexy Valentine Reddit Contest Winners" width="700" loading="lazy">
@@ -779,7 +792,7 @@
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5" id="contact">
+    <div class="container col-xxl-10 px-4 py-5" id="contact">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-12 col-sm-8 col-lg-6">
           <img src="https://files.cdn2.io/images/logos/logo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
